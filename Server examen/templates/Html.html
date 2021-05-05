@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MercaCheve</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	
+</head>
+  <style type="text/css">
+	
+	 body{
+		background-image: url("static/a.jpg");
+    background-attachment:fixed;
+    background-position:950px 200px;
+    background-repeat: no-repeat;
+	 }
+  </style>
+
+<body>
+
+<div class="container"style="text-align:center">
+  
+ 
+ <h2 style= "font-size : 100px" > MercaCheve </h2> <hr><br><br> 
+ <h3 > Ingrese la cantidad de cerveza</h3> <br> <hr>
+  <form action="integrantes.html">
+
+  <label style="font-size:40px" for="tipo" > Cerveza Indio </label><br>
+  <img src="static/indio.jpg"> <br>
+
+  <input type="range" id="i" name="i" min="0" max="120" step="6" value="1" onchange="document.getElementById('outi').value=value"><br>
+  <output id= "outi" name="outi" for="i">0</output><br><br><hr>
+  
+
+  <label style="font-size:40px" for="tipo">Cerveza Tecate</label><br>
+  <img src="static/tecate.jpg"> <br>
+  <input type="range" id="t" name="t" min="0" max="120" step="6" value="1" onchange="document.getElementById('outt').value=value"><br>
+  <output id= "outt" name="outt" for="t">0</output><br><br><hr>
+
+  <label style="font-size:40px" for="tipo">Cerveza Budlight</label><br>
+  <img src="static/Bud.png"> <br>
+  <input type="range" id="b" name="b" min="0" max="120" step="6" value="1" onchange="document.getElementById('outb').value=value"><br>
+  <output id= "outb" name="outb" for="b">0</output><br><br>
+
+    
+  <hr><h4 > Ingrese su pago </h4> <br>
+ <input type="number" id="pago" name="pago">
+  <hr><h5> Su total fue -> </h5> <br>
+  <output= "getElementById">
+
+  <input type="submit" value="Comprar!" action="">
+  <input type="reset" value="Reset"><br><hr>
+
+
+  <script type="text/javascript">
+    var n1= parseInt(document.getElementById("i").value);
+    var n2= parseInt(document.getElementById("t").value);
+    var n3= parseInt(document.getElementById("b").value);
+
+    if(1==1){
+      document.getElementById("result").value=n1+n2+n3;
+    }
+
+  
+  
+  
+  
+  </script>
+  
+ 
+
+
+
+ <label>*Venta exclusivamente en paquetes de 6 cervezas*</label>
+    
+
+  
+ 
+ 
+</div>
+
+
